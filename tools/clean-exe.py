@@ -1,11 +1,11 @@
-import os, subprocess
+import os, util
 
 splitter = filter(lambda fmap: len(fmap) < 2, list(map(lambda x: x.split('.'), os.listdir(os.getcwd()))))
 status = 0
 
 for fname in splitter:
     cmd = str("rm " + fname[0])
-    status = subprocess.run(cmd, shell=True).returncode
+    status = util.sh(cmd)
 
 
 print("Return Code: ", status)
