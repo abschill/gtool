@@ -1,11 +1,11 @@
 #! /usr/bin/bash
-sudo apt update && sudo apt upgrade \ &&
+sudo apt update && sudo apt upgrade -y\ &&
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash \ &&
 source ~/.bashrc \ &&
 npm install -g pm2 \ &&
 # dont bother to allow node on reserved ports below 1024, proxy it through nginx
-sudo apt install nginx \ &&
-sudo apt install vim \ &&
+sudo apt install nginx -y\ &&
+sudo apt install vim -y\ &&
 npm i -g yarn
 
 # optional - go to nginx config

@@ -1,7 +1,3 @@
 #! /usr/bin/bash
-sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl && sudo chmod a+rx /usr/local/bin/youtube-dl
-sudo apt install rig
-sudo apt install 0ad
-sudo apt install fnt
-sudo apt install mpv
-sudo apt install ffmpeg
+sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl && sudo chmod a+rx /usr/local/bin/youtube-dl \\
+sudo apt install mpv rig 0ad fnt ffmpeg -y
