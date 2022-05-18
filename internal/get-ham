@@ -1,0 +1,17 @@
+#! /usr/bin/bash
+sudo apt install cw
+sudo apt install comptext
+sudo apt install comptty
+sudo apt install dsdcc
+sudo apt install freedv
+sudo apt install flamp
+sudo apt install gnss-sdr
+sudo apt install gnuais
+sudo apt install gnuaisgui
+sudo apt install hacktv
+sudo apt install grig
+sudo apt install klog
+sudo apt install xdemorse
+sudo apt install xdx
+sudo apt install wfview
+sudo apt install wsjtx
