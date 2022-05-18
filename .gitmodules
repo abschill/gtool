@@ -1,0 +1,3 @@
+[submodule "gitty"]
+	path = gitty
+	url = https://github.com/abschill/gitty
