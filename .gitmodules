@@ -4,3 +4,6 @@
 [submodule "dotfiles"]
 	path = dotfiles
 	url = https://github.com/abschill/dotfiles
+[submodule "emacs-config"]
+	path = emacs-config
+	url = https://github.com/abschill/emacs-config
