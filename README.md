@@ -4,8 +4,11 @@ toolbelt for developers
 
 ## how to use
 
-wget `<raw_github_url>`
+whichever process u use to download stuff
 
-for a given module
+save the file
+`wget <raw_github_url>`
 
-then just run it with the appropriate process
+print result from file to stdout with wget
+wget -qO- <raw_github_url>`
+
