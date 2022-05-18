@@ -2,7 +2,6 @@
 import util
 
 status = 0
-statuc = util.py('-m pip install --upgrade pip')
-status = util.py('pip install pyyaml')
+status = util.pip('install pyyaml')
 
 print('Exit Code: ', status)

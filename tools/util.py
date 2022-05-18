@@ -1,18 +1,17 @@
-from platform import python_compiler
-#!/usr/bin/env python3
 import subprocess
 
-def sh(*chars):
-	sep = ' '
-	str = sep.join(chars)
+
+def to_string(chars):
+	return ' '.join(list(chars))
+
+def sh(chars):
+	str = to_string(chars)
 	return subprocess.run(str, shell=True).returncode
 
+def py(chars):
+	cmd = 'python ' + to_string(chars)
+	return subprocess.run(cmd, shell=True).returncode
 
-def iprefix(prefix, iterators):
-	for i in iterators:
-		return sh(prefix, i)
-
-def py(*chars):
-	sep = ' '
-	str = sep.join(chars)
-	return subprocess.run(str, python_compiler=True).returncode
+def pip(chars):
+	cmd = 'pip ' + to_string(chars)
+	return subprocess.run(cmd, shell=True).returncode

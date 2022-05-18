@@ -7,7 +7,7 @@ pips = [
 	'numpy',
 	'Cython'
 ]
-
-status = util.iprefix('pip install', pips)
+for i in pips:
+	status = util.pip(('install', i))
 
 print('Exit Code: ', status)
