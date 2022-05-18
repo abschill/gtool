@@ -1,4 +1,4 @@
-param([string]$hosts = "amazon.com,bing.com,cnn.com,dropbox.com,facebook.com,google.com,live.com,twitter.com,youtube.com")
+param([string]$hosts = "amazon.com,bing.com,dropbox.com,youtube.com")
 
 try {
 	write-progress "Sending pings to $hosts..."

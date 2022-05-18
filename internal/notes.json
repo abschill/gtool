@@ -1,0 +1,95 @@
+{
+	"config": {
+		"github": {
+			"prefix": "https://github.com/abschill/"
+		}
+	},
+	"sources": [
+		{
+			"name": "Computer Science",
+			"tags": [
+				"cs",
+				"c",
+				"c++",
+				"tcp"
+			],
+			"repo": {
+				"git": {
+					"href": "cs-notes"
+				}
+			}
+		},
+		{
+			"name": "Web Notes",
+			"tags": [
+				"html",
+				"css",
+				"js",
+				"ts",
+				"nodejs",
+				"node",
+				"deno",
+				"javascript",
+				"typescript",
+				"DOM"
+			],
+			"repo": {
+				"git": {
+					"href": "fullstack-web-notes"
+				}
+			}
+		},
+		{
+			"name": "Golang",
+			"tags": [
+				"go",
+				"tcp",
+				"net",
+				"http"
+			],
+			"repo": {
+				"git": {
+					"href": "go-notes"
+				}
+			}
+		},
+		{
+			"name": "Rust",
+			"tags": [
+				"rust",
+				"rs",
+				"cargo"
+			],
+			"repo": {
+				"git": {
+					"href": "rust-notes"
+				}
+			}
+		},
+		{
+			"name": "Erlang",
+			"tags": [
+				"erl",
+				"erlang",
+				"erl"
+			],
+			"repo": {
+				"git": {
+					"href": "erlang-notes"
+				}
+			}
+		},
+		{
+			"name": "Miscellaneous",
+			"tags": [
+				"misc",
+				"random"
+			],
+			"repo": {
+				"git": {
+					"href": "misc-notes"
+				}
+			}
+		}
+	]
+}
