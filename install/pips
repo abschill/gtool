@@ -1,0 +1,3 @@
+pip install pyyaml
+pip install numpy
+pip install Cython
