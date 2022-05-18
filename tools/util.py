@@ -1,4 +1,5 @@
 from platform import python_compiler
+#!/usr/bin/env python3
 import subprocess
 
 def sh(*chars):

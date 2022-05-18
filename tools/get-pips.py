@@ -1,8 +1,11 @@
+#!/usr/bin/env python3
 import util
 
 status = 0
 pips = [
-	'pyyaml'
+	'pyyaml',
+	'numpy',
+	'Cython'
 ]
 
 status = util.iprefix('pip install', pips)
