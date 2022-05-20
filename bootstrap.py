@@ -1,4 +1,4 @@
-import urllib, os
+import urllib.request, os
 # probably set this properly later
 p_path = os.getcwd()
 b_path = 'https://raw.githubusercontent.com/abschill/gtool/main/bootstrap/'
@@ -13,5 +13,8 @@ b_files = [
 ]
 
 for file in b_files:
-	f = urllib.URLopener()
-	f.retrieve(b_path+file, file)
+	with urllib.request(b_path+file, file) as response:
+		f = open(file, 'w')
+		f.write(response.read())
+		f.close()
+
