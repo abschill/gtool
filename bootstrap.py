@@ -13,8 +13,12 @@ b_files = [
 ]
 
 for file in b_files:
-	with urllib.request(b_path+file, file) as response:
-		f = open(file, 'w')
-		f.write(response.read())
+	file_url = b_path+file
+	print('Downloading:')
+	print(file_url)
+	with urllib.request.urlopen(file_url) as response:
+		c = response.read()
+		f = open(file, 'wb')
+		f.write(c)
 		f.close()
 
