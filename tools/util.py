@@ -1,6 +1,5 @@
 import subprocess
 
-
 def to_string(chars):
 	return ' '.join(list(chars))
 

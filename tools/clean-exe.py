@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import os, util
 
 splitter = filter(lambda fmap: len(fmap) < 2, list(map(lambda x: x.split('.'), os.listdir(os.getcwd()))))

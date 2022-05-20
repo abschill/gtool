@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import requests, os
 # probably set this properly later
 p_path = os.getcwd()
