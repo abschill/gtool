@@ -1,15 +1,17 @@
-import requests, os
+import urllib, os
 # probably set this properly later
 p_path = os.getcwd()
-b_files = 'bootstrap'
+b_path = 'https://raw.githubusercontent.com/abschill/gtool/main/bootstrap/'
 # global dotfiles regardless of proj type
+b_files = [
+	'.editorconfig',
+	'.gitkeep',
+	'MakeFile',
+	'authors',
+	'license',
+	'readme.md'
+]
 
-def ctxpath(rel, f):
-	if(f == None): return os.path.join(p_path, rel)
-	return os.path.join(p_path, rel, f)
-
-bs_path = os.listdir(ctxpath(b_files, ''))
-
-for file in bs_path:
-	f = open(ctxpath('bootstrap', file), 'r')
-	open(file, 'wb').write(f.read())
+for file in b_files:
+	f = urllib.URLopener()
+	f.retrieve(b_path+file, file)
