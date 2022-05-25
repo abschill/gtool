@@ -7,5 +7,5 @@ status = 0
 if len(sys.argv) < 2:
 	exit('error: no url to download. exit 1')
 
-cmd = 'youtube-dl' + sys.argv[1]
+cmd = 'youtube-dl -k ' + sys.argv[1]
 status = util.sh(cmd)
