@@ -6,3 +6,5 @@ bower_components
 *.ignore
 /ignore/**/*
 *pycache*
+yarn.lock
+package.json

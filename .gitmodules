@@ -3,4 +3,4 @@
 	url = https://github.com/abschill/gitty
 [submodule "dotfiles"]
 	path = dotfiles
-	url = git@github.com:abschill/dotfiles
+	url = git@github.com:abschill/dotfiles.git
