@@ -8,3 +8,4 @@ bower_components
 *pycache*
 yarn.lock
 package.json
+.DS_STORE
