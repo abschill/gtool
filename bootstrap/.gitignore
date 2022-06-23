@@ -1,0 +1,7 @@
+build
+dist
+node_modules
+CMakeFiles
+cmake_install.cmake
+CMakeCache.*
+.cache
