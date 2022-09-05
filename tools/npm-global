@@ -1,0 +1,3 @@
+#!/bin/bash
+global_node_modules="$(npm root --location=global)"
+echo "Global packages installed in: ${global_node_modules}"
